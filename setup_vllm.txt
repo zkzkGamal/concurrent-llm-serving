@@ -1,0 +1,9 @@
+curl -LsSf https://astral.sh/uv/install.sh | sh
+python3.12 -m venv ~/sglang-env
+source ~/sglang-env/bin/activate
+pip install --upgrade pip
+pip install -U pip setuptools wheel
+uv pip install vllm --torch-backend=auto --extra-index-url https://wheels.vllm.ai/nightly
+
+### finally 
+vllm serve Qwen/Qwen3.5-0.8B --port 8000 --tensor-parallel-size 1 --max-model-len 32768 --gpu-memory-utilization 0.75  --reasoning-parser qwen3

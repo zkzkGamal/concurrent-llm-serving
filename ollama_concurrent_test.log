@@ -1,0 +1,23 @@
+15:01:25 [INFO] 🚀 Starting 4 concurrent requests with Ollama...
+15:01:25 [INFO] Request 1 started at 2026-03-15 15:01:25.376
+15:01:25 [INFO] Request 2 started at 2026-03-15 15:01:25.539
+15:01:25 [INFO] Request 3 started at 2026-03-15 15:01:25.540
+15:01:25 [INFO] Request 4 started at 2026-03-15 15:01:25.540
+15:01:27 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+15:01:51 [INFO] Request 1 finished at 2026-03-15 15:01:51.456 | ⏱ 26.080s
+15:01:51 [INFO] Response 1 saved ✓
+
+15:01:51 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+15:02:16 [INFO] Request 2 finished at 2026-03-15 15:02:16.063 | ⏱ 50.524s
+15:02:16 [INFO] Response 2 saved ✓
+
+15:02:16 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+15:02:30 [INFO] Request 4 finished at 2026-03-15 15:02:30.192 | ⏱ 64.652s
+15:02:30 [INFO] Response 4 saved ✓
+
+15:02:30 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+15:03:40 [INFO] Request 3 finished at 2026-03-15 15:03:40.094 | ⏱ 134.554s
+15:03:40 [INFO] Response 3 saved ✓
+
+15:03:40 [INFO] 📁 Report saved → ollama_results.md
+15:03:40 [INFO] 📁 Log saved → ollama_concurrent_test.log

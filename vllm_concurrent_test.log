@@ -1,0 +1,91 @@
+15:30:45 [INFO] 🚀 Starting 16 concurrent requests with SGLang...
+15:30:45 [INFO] Request 1 started at 2026-03-15 15:30:45.540
+15:31:22 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:31:22 [INFO] Request 1 finished at 2026-03-15 15:31:22.660 | ⏱ 37.120s
+15:31:22 [INFO] Response 1 saved ✓
+
+15:31:22 [INFO] 📁 Report saved → vllm_results.md
+15:31:22 [INFO] 📁 Log saved → vllm_concurrent_test.log
+15:31:51 [INFO] 🚀 Starting 16 concurrent requests with SGLang...
+15:31:51 [INFO] Request 1 started at 2026-03-15 15:31:51.624
+15:31:51 [INFO] Request 2 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 3 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 4 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 5 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 6 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 7 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 8 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 9 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 10 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 11 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 12 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 13 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 14 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 15 started at 2026-03-15 15:31:51.627
+15:31:51 [INFO] Request 16 started at 2026-03-15 15:31:51.628
+15:32:01 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:01 [INFO] Request 9 finished at 2026-03-15 15:32:01.878 | ⏱ 10.251s
+15:32:01 [INFO] Response 9 saved ✓
+
+15:32:01 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:01 [INFO] Request 3 finished at 2026-03-15 15:32:01.916 | ⏱ 10.290s
+15:32:01 [INFO] Response 3 saved ✓
+
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] Request 6 finished at 2026-03-15 15:32:02.143 | ⏱ 10.516s
+15:32:02 [INFO] Response 6 saved ✓
+
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] Request 2 finished at 2026-03-15 15:32:02.312 | ⏱ 10.686s
+15:32:02 [INFO] Response 2 saved ✓
+
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] Request 15 finished at 2026-03-15 15:32:02.743 | ⏱ 11.115s
+15:32:02 [INFO] Response 15 saved ✓
+
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] Request 1 finished at 2026-03-15 15:32:02.872 | ⏱ 11.248s
+15:32:02 [INFO] Response 1 saved ✓
+
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:32:02 [INFO] Request 11 finished at 2026-03-15 15:32:02.888 | ⏱ 11.260s
+15:32:02 [INFO] Response 11 saved ✓
+
+15:32:02 [INFO] Request 5 finished at 2026-03-15 15:32:02.888 | ⏱ 11.261s
+15:32:02 [INFO] Response 5 saved ✓
+
+15:32:02 [INFO] Request 14 finished at 2026-03-15 15:32:02.888 | ⏱ 11.260s
+15:32:02 [INFO] Response 14 saved ✓
+
+15:32:02 [INFO] Request 8 finished at 2026-03-15 15:32:02.888 | ⏱ 11.261s
+15:32:02 [INFO] Response 8 saved ✓
+
+15:32:02 [INFO] Request 12 finished at 2026-03-15 15:32:02.888 | ⏱ 11.261s
+15:32:02 [INFO] Response 12 saved ✓
+
+15:32:02 [INFO] Request 13 finished at 2026-03-15 15:32:02.888 | ⏱ 11.261s
+15:32:02 [INFO] Response 13 saved ✓
+
+15:32:02 [INFO] Request 10 finished at 2026-03-15 15:32:02.888 | ⏱ 11.261s
+15:32:02 [INFO] Response 10 saved ✓
+
+15:32:02 [INFO] Request 16 finished at 2026-03-15 15:32:02.888 | ⏱ 11.261s
+15:32:02 [INFO] Response 16 saved ✓
+
+15:32:02 [INFO] Request 7 finished at 2026-03-15 15:32:02.888 | ⏱ 11.261s
+15:32:02 [INFO] Response 7 saved ✓
+
+15:32:02 [INFO] Request 4 finished at 2026-03-15 15:32:02.888 | ⏱ 11.262s
+15:32:02 [INFO] Response 4 saved ✓
+
+15:32:02 [INFO] 📁 Report saved → vllm_results.md
+15:32:02 [INFO] 📁 Log saved → vllm_concurrent_test.log

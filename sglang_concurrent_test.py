@@ -1,0 +1,141 @@
+import asyncio
+import os
+import logging
+from datetime import datetime
+from langchain_openai import ChatOpenAI
+from langchain_core.messages import HumanMessage
+
+"""
+see ./setup_sglang.txt
+to install and run sglang
+i run command sglang to start server at 
+[2026-03-15 15:33:43] Using default HuggingFace chat template with detected content format: openai
+and server up at 
+[2026-03-15 15:34:00] The server is fired up and ready to roll!
+this dont need any warmup message it start serve direct
+"""
+
+# ---------------------------
+# 1️⃣ Setup logging (console + file)
+# ---------------------------
+log_file = "sglang_concurrent_test.log"
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%H:%M:%S",
+    handlers=[
+        logging.FileHandler(log_file, encoding="utf-8"),
+        logging.StreamHandler()
+    ]
+)
+
+# ---------------------------
+# 2️⃣ SGLang config
+# ---------------------------
+os.environ["OPENAI_API_BASE"] = "http://127.0.0.1:8000/v1"
+os.environ["OPENAI_API_KEY"] = "dummy"
+
+llm = ChatOpenAI(
+    model_name="Qwen/Qwen3.5-0.8B",
+    temperature=0.7,
+    max_tokens=150,
+)
+
+# ---------------------------
+# 3️⃣ Async function (now returns data for report)
+# ---------------------------
+async def send_message(prompt: str, idx: int):
+    start_time = datetime.now()
+    start_str = start_time.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+    logging.info(f"Request {idx} started at {start_str}")
+
+    try:
+        response = await llm.agenerate([[HumanMessage(content=prompt)]])
+        end_time = datetime.now()
+        elapsed = (end_time - start_time).total_seconds()
+        end_str = end_time.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+
+        resp_text = response.generations[0][0].text.strip()
+
+        logging.info(f"Request {idx} finished at {end_str} | ⏱ {elapsed:.3f}s")
+        logging.info(f"Response {idx} saved ✓\n")
+
+        print(f"✅ Request {idx} done in {elapsed:.2f}s")
+
+        return {
+            "idx": idx,
+            "start": start_str,
+            "end": end_str,
+            "elapsed": elapsed,
+            "response": resp_text
+        }
+
+    except Exception as e:
+        logging.error(f"Request {idx} ERROR: {e}")
+        return {"idx": idx, "error": str(e), "elapsed": 0}
+
+# ---------------------------
+# 4️⃣ Main + Beautiful Markdown Report
+# ---------------------------
+async def main():
+    prompts = [
+        "Hello! Give me a fun fact about AI.",
+        "Summarize the history of the internet in 2 sentences.",
+        "Write a haiku about programming.",
+        "Explain reinforcement learning like I'm 10 years old.",
+        "What are the latest trends in AI for 2026?",
+        "Give me a short joke about Python programming.",
+        "Explain quantum computing in simple terms.",
+        "What is LangChain and why is it useful?",
+        "Write a two-line poem about machine learning.",
+        "Describe a neural network using a cooking analogy.",
+        "What are the differences between GPT and Qwen models?",
+        "Explain the concept of attention in transformers.",
+        "What is reinforcement learning and give a real-life example.",
+        "Give me a tip to optimize GPU memory usage.",
+        "Summarize the Python asyncio library in one paragraph.",
+        "Explain the difference between supervised and unsupervised learning."
+    ]
+    logging.info("🚀 Starting 16 concurrent requests with SGLang...")
+
+    total_start = datetime.now()
+    results = await asyncio.gather(
+        *(send_message(p, i+1) for i, p in enumerate(prompts))
+    )
+    total_elapsed = (datetime.now() - total_start).total_seconds()
+
+    # === Generate README-ready Markdown ===
+    report_file = "sglang_results.md"
+    with open(report_file, "w", encoding="utf-8") as f:
+        f.write("# 🟢 SGLang Concurrent Test Results\n\n")
+        f.write("**Model:** `Qwen/Qwen3.5-0.8B` via SGLang (OpenAI compatible)\n")
+        f.write("**Requests:** 16 concurrent\n\n")
+        f.write(f"**Total time:** `{total_elapsed:.2f} seconds` 🎉\n\n")
+
+        f.write("## 📊 Per-Request Timings\n\n")
+        f.write("| # | Started At          | Duration   | Status    |\n")
+        f.write("|---|---------------------|------------|-----------|\n")
+
+        for r in sorted(results, key=lambda x: x["idx"]):
+            if "error" in r:
+                f.write(f"| {r['idx']:2} | - | - | ❌ Error |\n")
+            else:
+                f.write(f"| {r['idx']:2} | {r['start']} | `{r['elapsed']:.3f}s` | ✅ OK |\n")
+
+        f.write("\n## 📝 Full Responses\n\n")
+        for r in sorted(results, key=lambda x: x["idx"]):
+            if "error" not in r:
+                f.write(f"### Request {r['idx']} ({r['elapsed']:.2f}s)\n")
+                f.write(f"**Started:** {r['start']} **Finished:** {r['end']}\n\n")
+                f.write(f"{r['response']}\n\n---\n\n")
+
+        f.write(f"\n**All 16 requests completed in {total_elapsed:.2f} seconds.**\n")
+        f.write("Generated by improved test script • " + datetime.now().strftime("%Y-%m-%d %H:%M"))
+
+    logging.info(f"📁 Report saved → {report_file}")
+    logging.info(f"📁 Log saved → {log_file}")
+    print(f"\n🎉 FINISHED! Total: {total_elapsed:.2f}s | 📄 {report_file} ready for README!")
+
+# ---------------------------
+if __name__ == "__main__":
+    asyncio.run(main())

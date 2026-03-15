@@ -1,0 +1,14 @@
+curl -LsSf https://astral.sh/uv/install.sh | sh
+python3.12 -m venv ~/sglang-env
+source ~/sglang-env/bin/activate
+pip install --upgrade pip
+uv pip install 'git+https://github.com/sgl-project/sglang.git#subdirectory=python&egg=sglang[all]'
+
+### finally 
+python -m sglang.launch_server \
+    --model-path Qwen/Qwen3.5-0.8B \
+    --port 8000 \
+    --tp-size 1 \
+    --mem-fraction-static 0.8 \
+    --context-length 32768 \
+    --attention-backend triton
