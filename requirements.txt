@@ -1,0 +1,23 @@
+# ──────────────────────────────────────────────────────────────
+# Requirements for concurrent LLM serving test scripts
+#
+# Used by:
+#   vllm_concurrent_test.py    → langchain-openai
+#   sglang_concurrent_test.py  → langchain-openai
+#   ollama_concurrent_test.py  → langchain-ollama
+#
+# Install:
+#   pip install -r requirements.txt
+# ──────────────────────────────────────────────────────────────
+
+# LangChain OpenAI-compatible client
+# Used to talk to vLLM & SGLang (both expose OpenAI-compatible API)
+langchain-openai>=0.3.0
+
+# LangChain Ollama client
+# Used to talk to the Ollama server (port 11434)
+langchain-ollama>=0.3.0
+
+# LangChain core (message types: HumanMessage, etc.)
+# Pulled in automatically by the above, pinned here for clarity
+langchain-core>=0.3.0
