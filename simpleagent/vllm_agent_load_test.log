@@ -1,0 +1,267 @@
+15:50:10 [INFO] 🚀 Starting 3 sessions → VLLM @ http://127.0.0.1:8000/v1
+15:50:10 [INFO] Session 1 [CONVERSATION] → 'vLLM vs SGLang vs Ollama Concurrency Analysis'
+15:50:10 [INFO] Session 1 | Turn 1/5 | Concurrency is where most local setups break. Walk me throug...
+15:50:10 [INFO] Session 2 [ACT] → 'Deep Technical Research'
+15:50:10 [INFO] Session 2 | Turn 1/5 | Search for 'paged attention vLLM memory fragmentation soluti...
+15:50:10 [INFO] Session 3 [SUMMARIZE] → 'Research Paper Analysis and Action Plan'
+15:50:10 [INFO] Session 3 | Turn 1/5 | Here is a detailed research paper summary on FlashAttention-...
+15:50:11 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:11 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:11 [INFO] [Router] → 'act'
+15:50:11 [INFO] [Graph] Routing to: act
+15:50:11 [INFO] [Router] → 'act'
+15:50:11 [INFO] [Graph] Routing to: act
+15:50:11 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:11 [INFO] [Router] → 'act'
+15:50:11 [INFO] [Graph] Routing to: act
+15:50:11 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:11 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:11 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:11 [WARNING] Impersonate 'chrome_131' does not exist, using 'random'
+15:50:12 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=paged%20attention%20vLLM%20memory%20fragmentation%20solution%20block%20manager 200
+15:50:12 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20how%20it%20combines%20requests 200
+15:50:16 [INFO] Error in engine yahoo: DDGSException("Timeout: Timeout('Request timeout (5000 ms) exceeded', 'https://grokipedia.com/api/typeahead')")
+15:50:16 [INFO] Error in engine yandex: DDGSException("Timeout: Timeout('Request timeout (5000 ms) exceeded', 'https://grokipedia.com/api/typeahead')")
+15:50:17 [INFO] response: https://search.yahoo.com/search;_ylt=bnPbffRIIeMRloJgXeC9Jv7V;_ylu=cTcpvGlYZ2D51l6FSegJ_kdAzX5PQStFdepboPMlvElJpvM?p=paged+attention+vLLM+memory+fragmentation+solution+block+manager 200
+15:50:17 [INFO] Error in engine google: DDGSException("HTTPError: HTTPError('HTTP 403 Forbidden for URL: https://www.google.com/search?q=vLLM+continuous+batching+scheduler+how+it+combines+requests&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS', 403, 'https://www.google.com/search?q=vLLM+continuous+batching+scheduler+how+it+combines+requests&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS', 'Forbidden')")
+15:50:17 [INFO] response: https://yandex.com/search/site/?text=vLLM+continuous+batching+scheduler+how+it+combines+requests&web=1&searchid=4641475 200
+15:50:18 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+15:50:18 [INFO] [DDGS] Result: How PagedAttention resolves memory waste of LLM systems
+15:50:18 [INFO] [DDGS] Result: Efficient Memory Management for Large Language Model Serving ...
+15:50:18 [INFO] [DDGS] Result: Part 2 — Memory Is the Real Bottleneck: How Paged Attention Powers the ...
+15:50:18 [INFO] [DDGS] Result: Paged Attention - vLLM
+15:50:18 [INFO] [DDGS] Result: PagedAttention: Solving LLM KV Cache Memory Fragmentation
+15:50:18 [INFO] [DDGS] Result: GitHub - VARUN3WARE/Paged-Attention: Implementation of ...
+15:50:18 [INFO] [DDGS] Result: The Architecture Behind vLLM: How PagedAttention Improves ...
+15:50:18 [INFO] [DDGS] Result: vLLM: How PagedAttention Solved the Memory Crisis in LLM Serving
+15:50:18 [INFO] [DDGS] Result: [2309.06180] Efficient Memory Management for Large Language Model ...
+15:50:18 [INFO] [DDGS] Result: Understanding PagedAttention and Memory Management | vllm-project/vllm ...
+15:50:18 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:18 [INFO] response: https://search.yahoo.com/search;_ylt=hyEaLWQBsjU1lSD8tA0A9Bvi;_ylu=918G4m4jrdngtg6hKthrwMpo0WQGjWkLwucVwJnaT5zYwO8?p=vLLM+continuous+batching+scheduler+how+it+combines+requests 200
+15:50:18 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:18 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:19 [INFO] [DDGS] Result: How do you implement Continuous batching of incoming requests ?
+15:50:19 [INFO] [DDGS] Result: vLLM
+15:50:19 [INFO] [DDGS] Result: Token-Efficient Inference: A Comparative Systems Analysis of vLLM ...
+15:50:19 [INFO] [DDGS] Result: Batching for Efficient GPU Utilisation: Llama2 vs Mixtral Series
+15:50:19 [INFO] [DDGS] Result: Continuous Batching : 23x Throughput, Better Latency... | TrackAI
+15:50:19 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:19 [INFO] Session 3 | Turn 2/5 | Write a comprehensive technical review of FA3 covering: (1) ...
+15:50:19 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:19 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:19 [INFO] [Router] → 'summarize'
+15:50:19 [INFO] [Graph] Routing to: summarize
+15:50:19 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:20 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:20 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:21 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:21 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20batch%20size%20limit%20how%20it%20combines%20requests 200
+15:50:21 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+batch+size+limit+how+it+combines+requests&limit=1 200
+15:50:21 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:22 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:22 [INFO] response: https://yandex.com/search/site/?text=vLLM+continuous+batching+scheduler+batch+size+limit+how+it+combines+requests&web=1&searchid=9017978 200
+15:50:23 [INFO] [DDGS] Result: vLLM
+15:50:23 [INFO] [DDGS] Result: Life of an inference request ( vLLM V1): How LLMs are served...
+15:50:23 [INFO] [DDGS] Result: Batching for Efficient GPU Utilisation: Llama2 vs Mixtral Series
+15:50:23 [INFO] [DDGS] Result: Does the continuous batching technology in the vLLM online service...
+15:50:23 [INFO] [DDGS] Result: vLLM : Deploying LLMs at Scale Like OpenAI
+15:50:23 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:23 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:24 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:25 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:25 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:26 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:27 [INFO] Session 2 | Turn 2/5 | Now search for 'continuous batching LLM serving scheduler de...
+15:50:27 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:27 [INFO] [Router] → 'act'
+15:50:27 [INFO] [Graph] Routing to: act
+15:50:27 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:28 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=paged%20attention%20vLLM%20memory%20fragmentation%20solution%20continuous%20batching%20LLM%20serving%20scheduler%20design 200
+15:50:29 [INFO] response: https://grokipedia.com/api/typeahead?query=paged+attention+vLLM+memory+fragmentation+solution+continuous+batching+LLM+serving+scheduler+design&limit=1 200
+15:50:30 [INFO] response: https://yandex.com/search/site/?text=paged+attention+vLLM+memory+fragmentation+solution+continuous+batching+LLM+serving+scheduler+design&web=1&searchid=8993463 200
+15:50:30 [INFO] [DDGS] Result: Optimizing NVIDIA GPU Utilization for LLM Inference: A Deep Dive for...
+15:50:30 [INFO] [DDGS] Result: vLLM : Deploying LLMs at Scale Like OpenAI
+15:50:30 [INFO] [DDGS] Result: vLLM vs Triton vs TGI: Choosing the Right LLM Serving Framework
+15:50:30 [INFO] [DDGS] Result: The Memory Revolution: How vLLM Fixed the Broken Way We Serve ...
+15:50:30 [INFO] [DDGS] Result: PagedAttention: Solving LLM KV Cache Memory Fragmentation ...
+15:50:30 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:30 [INFO] Session 1 | Turn 2/5 | Now explain SGLang's RadixAttention. How does prefix caching...
+15:50:30 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:30 [INFO] [Router] → 'summarize'
+15:50:30 [INFO] [Graph] Routing to: summarize
+15:50:31 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference%20algorithmic%20differences 200
+15:50:31 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+FCFS+shortest-job-first+priority-based+LLM+inference+algorithmic+differences&limit=1 200
+15:50:32 [INFO] Error in engine google: DDGSException("HTTPError: HTTPError('HTTP 403 Forbidden for URL: https://www.google.com/search?q=vLLM+continuous+batching+scheduler+FCFS+shortest-job-first+priority-based+LLM+inference+algorithmic+differences&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS', 403, 'https://www.google.com/search?q=vLLM+continuous+batching+scheduler+FCFS+shortest-job-first+priority-based+LLM+inference+algorithmic+differences&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS', 'Forbidden')")
+15:50:33 [INFO] response: https://www.mojeek.com/search?q=vLLM+continuous+batching+scheduler+FCFS+shortest-job-first+priority-based+LLM+inference+algorithmic+differences 200
+15:50:33 [INFO] [DDGS] Result: Throughput-Optimal Scheduling Algorithms for LLM Inference and
+15:50:33 [INFO] [DDGS] Result: Throughput-Optimal Scheduling Algorithms for LLM Inference and
+15:50:33 [INFO] [DDGS] Result: EWSJF: An Adaptive Scheduler with Hybrid Partitioning for
+15:50:33 [INFO] [DDGS] Result: Semantic Scheduling for LLM Inference
+15:50:33 [INFO] [DDGS] Result: Continuum: Efficient and Robust Multi-Turn LLM Agent Scheduling
+15:50:33 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:34 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:34 [INFO] Session 3 | Turn 3/5 | Create a migration guide for a team currently running vLLM o...
+15:50:34 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:35 [INFO] [Router] → 'conversation'
+15:50:35 [INFO] [Graph] Routing to: conversation
+15:50:35 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:50:35 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:50:36 [INFO] response: https://www.mojeek.com/search?q=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference 200
+15:50:36 [INFO] [DDGS] Result: Efficient Interactive LLM Serving with Proxy Model-based
+15:50:36 [INFO] [DDGS] Result: EWSJF: An Adaptive Scheduler with Hybrid Partitioning for
+15:50:36 [INFO] [DDGS] Result: Semantic Scheduling for LLM Inference
+15:50:36 [INFO] [DDGS] Result: Throughput-Optimal Scheduling Algorithms for LLM Inference and
+15:50:36 [INFO] [DDGS] Result: Continuum: Efficient and Robust Multi-Turn LLM Agent Scheduling
+15:50:36 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:37 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:50:37 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:50:37 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:37 [INFO] Session 1 | Turn 3/5 | We tested mixed request sizes — short 128-token prompts mixe...
+15:50:38 [INFO] response: https://search.brave.com/search?q=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&source=web 200
+15:50:38 [INFO] [DDGS] Result: Inside vLLM: Anatomy of a High-Throughput LLM Inference System | vLLM Blog
+15:50:38 [INFO] [DDGS] Result: Inside vLLM: Anatomy of a High-Throughput LLM Inference System - Aleksa Gordić
+15:50:38 [INFO] [DDGS] Result: Prompt-Aware Scheduling for Low-Latency LLM Serving
+15:50:38 [INFO] [DDGS] Result: PARS: Low-Latency LLM Serving via Pairwise Learning-to-Rank
+15:50:38 [INFO] [DDGS] Result: Semantic Scheduling for LLM Inference
+15:50:38 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:45 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:45 [INFO] [Router] → 'summarize'
+15:50:45 [INFO] [Graph] Routing to: summarize
+15:50:45 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:50:45 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:50:47 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+15:50:47 [INFO] [DDGS] Result: Is FCFS Scheduling Holding Back vLLm's Performance in Production?
+15:50:47 [INFO] [DDGS] Result: [RFC]: Priority Scheduling · Issue #6077 · vllm-project/vllm - GitHub
+15:50:47 [INFO] [DDGS] Result: Efficient LLM Scheduling by Learning to Rank | Hao AI Lab @ UCSD
+15:50:47 [INFO] [DDGS] Result: Efficient LLM Scheduling by Learning to Rank - arXiv.org
+15:50:47 [INFO] [DDGS] Result: Using vLLM To Accelerate Inference Speed By Continuous Batching
+15:50:47 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:47 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:50:48 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:50:48 [INFO] response: https://search.yahoo.com/search;_ylt=qkdyM9sOGPQzL1Xl7rfhK9Qi;_ylu=KK9bPKonwZjjJcAyFGhCcZL8sb-D75U4bd8_0scjOtLvEi0?p=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference 200
+15:50:49 [INFO] [DDGS] Result: scheduler - vLLM
+15:50:49 [INFO] [DDGS] Result: Request Scheduling and Continuous Batching | tensorflowt/vllm ...
+15:50:49 [INFO] [DDGS] Result: Using vLLM To Accelerate Inference Speed By Continuous Batching
+15:50:49 [INFO] [DDGS] Result: GitHub - hao-ai-lab/vllm-ltr: [NeurIPS 2024] Efficient LLM ...
+15:50:49 [INFO] [DDGS] Result: Under the Hood of vLLM: Memory, Scheduling & Batching ...
+15:50:49 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:50 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:50:51 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:50:52 [INFO] response: https://search.yahoo.com/search;_ylt=LaXR0Iu_d83_ES_nfiRx8M6d;_ylu=95HX-5QS0n6i_EE3jCDshZnLUm6Zu_lZPKy_tHeGXP1UqMA?p=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference 200
+15:50:52 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:52 [INFO] Session 1 | Turn 4/5 | What does Ollama do differently from vLLM and SGLang? When i...
+15:50:52 [INFO] [DDGS] Result: scheduler - vLLM
+15:50:52 [INFO] [DDGS] Result: Request Scheduling and Continuous Batching | tensorflowt/vllm ...
+15:50:52 [INFO] [DDGS] Result: Using vLLM To Accelerate Inference Speed By Continuous Batching
+15:50:52 [INFO] [DDGS] Result: GitHub - hao-ai-lab/vllm-ltr: [NeurIPS 2024] Efficient LLM ...
+15:50:52 [INFO] [DDGS] Result: Under the Hood of vLLM: Memory, Scheduling & Batching ...
+15:50:52 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:53 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:53 [INFO] [Router] → 'summarize'
+15:50:53 [INFO] [Graph] Routing to: summarize
+15:50:54 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:50:56 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:56 [INFO] Session 3 | Turn 4/5 | Based on the benchmarks in the paper, build a cost-benefit a...
+15:50:56 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:56 [INFO] [Router] → 'act'
+15:50:56 [INFO] [Graph] Routing to: act
+15:50:56 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:56 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:50:57 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+15:50:57 [INFO] [DDGS] Result: Is FCFS Scheduling Holding Back vLLm's Performance in Production?
+15:50:57 [INFO] [DDGS] Result: [RFC]: Priority Scheduling · Issue #6077 · vllm-project/vllm - GitHub
+15:50:57 [INFO] [DDGS] Result: Efficient LLM Scheduling by Learning to Rank | Hao AI Lab @ UCSD
+15:50:57 [INFO] [DDGS] Result: [2408.15792] Efficient LLM Scheduling by Learning to Rank
+15:50:57 [INFO] [DDGS] Result: Using vLLM To Accelerate Inference Speed By Continuous Batching
+15:50:57 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:50:59 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:50:59 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:51:00 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+15:51:00 [INFO] [DDGS] Result: Is FCFS Scheduling Holding Back vLLm's Performance in Production?
+15:51:00 [INFO] [DDGS] Result: [RFC]: Priority Scheduling · Issue #6077 · vllm-project/vllm - GitHub
+15:51:00 [INFO] [DDGS] Result: Efficient LLM Scheduling by Learning to Rank | Hao AI Lab @ UCSD
+15:51:00 [INFO] [DDGS] Result: Efficient LLM Scheduling by Learning to Rank - arXiv.org
+15:51:00 [INFO] [DDGS] Result: Using vLLM To Accelerate Inference Speed By Continuous Batching
+15:51:00 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:01 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:51:02 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:51:03 [INFO] response: https://yandex.com/search/site/?text=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&web=1&searchid=1902984 200
+15:51:03 [INFO] [DDGS] Result: LLM Inference Simplified (Part 1 ): Reducing Latency with... | Medium
+15:51:03 [INFO] [DDGS] Result: vLLM
+15:51:03 [INFO] [DDGS] Result: How to Speed up AI Inference with vLLM Continuous Batching
+15:51:03 [INFO] [DDGS] Result: A System-Level Analysis of Continuous Batching for... | Uplatz Blog
+15:51:03 [INFO] [DDGS] Result: vllm -project/ vllm : A high-throughput and memory-efficient inference ...
+15:51:03 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:04 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:51:05 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:05 [INFO] Session 1 | Turn 5/5 | Design a production load test for an LLM API endpoint. Speci...
+15:51:05 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:05 [INFO] [Router] → 'summarize'
+15:51:05 [INFO] [Graph] Routing to: summarize
+15:51:07 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:51:07 [INFO] response: https://www.google.com/search?q=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+15:51:07 [INFO] [DDGS] Result: Anatomy of a High-Throughput LLM Inference System | vLLM Blog
+15:51:07 [INFO] [DDGS] Result: Multi-Layer Scheduling for MoE-Based LLM Reasoning
+15:51:07 [INFO] [DDGS] Result: Dynamic Batch Processing with FlexiDecode Scheduler for Efficient ...
+15:51:07 [INFO] [DDGS] Result: [PDF] Efficient LLM Scheduling by Learning to Rank - OpenReview
+15:51:07 [INFO] [DDGS] Result: Optimizing LLM Inference Request Scheduling for Agentic Text-to-SQL
+15:51:07 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:09 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:51:09 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:51:10 [INFO] response: https://www.mojeek.com/search?q=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference 200
+15:51:10 [INFO] [DDGS] Result: Efficient Interactive LLM Serving with Proxy Model-based
+15:51:10 [INFO] [DDGS] Result: EWSJF: An Adaptive Scheduler with Hybrid Partitioning for
+15:51:10 [INFO] [DDGS] Result: Semantic Scheduling for LLM Inference
+15:51:10 [INFO] [DDGS] Result: Throughput-Optimal Scheduling Algorithms for LLM Inference and
+15:51:10 [INFO] [DDGS] Result: Continuum: Efficient and Robust Multi-Turn LLM Agent Scheduling
+15:51:10 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:11 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:51:12 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:51:13 [INFO] response: https://www.mojeek.com/search?q=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference 200
+15:51:13 [INFO] [DDGS] Result: Efficient Interactive LLM Serving with Proxy Model-based
+15:51:13 [INFO] [DDGS] Result: EWSJF: An Adaptive Scheduler with Hybrid Partitioning for
+15:51:13 [INFO] [DDGS] Result: Semantic Scheduling for LLM Inference
+15:51:13 [INFO] [DDGS] Result: Throughput-Optimal Scheduling Algorithms for LLM Inference and
+15:51:13 [INFO] [DDGS] Result: Continuum: Efficient and Robust Multi-Turn LLM Agent Scheduling
+15:51:13 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:15 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:51:15 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:51:15 [INFO] Error in engine google: DDGSException("HTTPError: HTTPError('HTTP 403 Forbidden for URL: https://www.google.com/search?q=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS', 403, 'https://www.google.com/search?q=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS', 'Forbidden')")
+15:51:17 [INFO] response: https://www.mojeek.com/search?q=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference 200
+15:51:17 [INFO] [DDGS] Result: Efficient Interactive LLM Serving with Proxy Model-based
+15:51:17 [INFO] [DDGS] Result: EWSJF: An Adaptive Scheduler with Hybrid Partitioning for
+15:51:17 [INFO] [DDGS] Result: Semantic Scheduling for LLM Inference
+15:51:17 [INFO] [DDGS] Result: Throughput-Optimal Scheduling Algorithms for LLM Inference and
+15:51:17 [INFO] [DDGS] Result: Continuum: Efficient and Robust Multi-Turn LLM Agent Scheduling
+15:51:17 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:19 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=vLLM%20continuous%20batching%20scheduler%20design%20FCFS%20shortest-job-first%20priority-based%20LLM%20inference 200
+15:51:19 [INFO] response: https://grokipedia.com/api/typeahead?query=vLLM+continuous+batching+scheduler+design+FCFS+shortest-job-first+priority-based+LLM+inference&limit=1 200
+15:51:20 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+15:51:20 [INFO] [DDGS] Result: Is FCFS Scheduling Holding Back vLLm's Performance in Production?
+15:51:20 [INFO] [DDGS] Result: Efficient LLM Scheduling by Learning to Rank | Hao AI Lab @ UCSD
+15:51:20 [INFO] [DDGS] Result: [RFC]: Priority Scheduling · Issue #6077 · vllm-project/vllm - GitHub
+15:51:20 [INFO] [DDGS] Result: [2408.15792] Efficient LLM Scheduling by Learning to Rank
+15:51:20 [INFO] [DDGS] Result: Scheduler | hao-ai-lab/vllm-ltr | DeepWiki
+15:51:20 [INFO] Session 2 | Turn 3/5 | Calculate total memory footprint for: Llama-3-70B in BF16 wi...
+15:51:20 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:20 [INFO] [Router] → 'act'
+15:51:20 [INFO] [Graph] Routing to: act
+15:51:20 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:20 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:20 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:27 [INFO] Session 2 | Turn 4/5 | Search for 'LLM inference quantization accuracy vs speed 202...
+15:51:28 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:28 [INFO] [Router] → 'summarize'
+15:51:28 [INFO] [Graph] Routing to: summarize
+15:51:31 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:31 [INFO] Session 2 | Turn 5/5 | Given a cluster of 8 H100 80GB GPUs: design the optimal serv...
+15:51:32 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:51:32 [INFO] [Router] → 'summarize'
+15:51:32 [INFO] [Graph] Routing to: summarize
+15:51:42 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:53:50 [INFO] Session 3 | Turn 5/5 | Write GitHub-style issue descriptions for the top 3 engineer...
+15:53:54 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:53:54 [INFO] [Router] → 'summarize'
+15:53:54 [INFO] [Graph] Routing to: summarize
+15:54:00 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+15:54:00 [INFO] 📁 Report: vllm_agent_performance_report.md | JSON: vllm_agent_results.json | Log: vllm_agent_load_test.log

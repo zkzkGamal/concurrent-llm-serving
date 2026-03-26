@@ -1,0 +1,100 @@
+16:24:58 [INFO] 🚀 Starting 3 sessions → SGLANG @ http://127.0.0.1:8000/v1
+16:24:58 [INFO] Session 1 [CONVERSATION] → 'vLLM vs SGLang vs Ollama Concurrency Analysis'
+16:24:58 [INFO] Session 1 | Turn 1/5 | Concurrency is where most local setups break. Walk me throug...
+16:24:58 [INFO] Session 2 [ACT] → 'Time + Search + Calculation Chain'
+16:24:58 [INFO] Session 2 | Turn 1/5 | What is the exact current date and time? Express it in ISO 8...
+16:24:58 [INFO] Session 3 [SUMMARIZE] → 'Architecture Document Deep Analysis'
+16:24:58 [INFO] Session 3 | Turn 1/5 | Here is a comprehensive architecture document for our LLM se...
+16:24:59 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:24:59 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:24:59 [INFO] [Router] → 'act'
+16:24:59 [INFO] [Router] → 'act'
+16:24:59 [INFO] [Graph] Routing to: act
+16:24:59 [INFO] [Graph] Routing to: act
+16:24:59 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:24:59 [INFO] [Router] → 'summarize'
+16:24:59 [INFO] [Graph] Routing to: summarize
+16:24:59 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:24:59 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:00 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:00 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:01 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:01 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:01 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:02 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:03 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:03 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:03 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:04 [INFO] Session 1 | Turn 2/5 | Now explain SGLang's RadixAttention. How does prefix caching...
+16:25:04 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:04 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:04 [INFO] [Router] → 'summarize'
+16:25:04 [INFO] [Graph] Routing to: summarize
+16:25:04 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:05 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:05 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:05 [INFO] Session 2 | Turn 2/5 | Search the web for 'Qwen3 model release 2025 performance' an...
+16:25:06 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:06 [INFO] [Router] → 'summarize'
+16:25:06 [INFO] [Graph] Routing to: summarize
+16:25:09 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:09 [INFO] Session 2 | Turn 3/5 | Calculate the following: sqrt(1099511627776) + log base 10 o...
+16:25:10 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:10 [INFO] [Router] → 'act'
+16:25:10 [INFO] [Graph] Routing to: act
+16:25:10 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:10 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:10 [INFO] Session 3 | Turn 2/5 | Provide a structured executive summary of the architecture d...
+16:25:10 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:10 [INFO] [Router] → 'summarize'
+16:25:10 [INFO] [Graph] Routing to: summarize
+16:25:11 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:11 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:13 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:13 [INFO] Session 1 | Turn 3/5 | We tested mixed request sizes — short 128-token prompts mixe...
+16:25:13 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:13 [INFO] [Router] → 'summarize'
+16:25:13 [INFO] [Graph] Routing to: summarize
+16:25:15 [INFO] Session 2 | Turn 4/5 | Search for 'LangGraph production use cases 2025' and summari...
+16:25:15 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:15 [INFO] [Router] → 'summarize'
+16:25:15 [INFO] [Graph] Routing to: summarize
+16:25:17 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:17 [INFO] Session 3 | Turn 3/5 | Extract every specific numerical metric from the document. P...
+16:25:18 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:18 [INFO] [Router] → 'summarize'
+16:25:18 [INFO] [Graph] Routing to: summarize
+16:25:20 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:20 [INFO] Session 2 | Turn 5/5 | Fetch the document 'performance_analysis_q1_2025'. Then comp...
+16:25:21 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:21 [INFO] [Router] → 'summarize'
+16:25:21 [INFO] [Graph] Routing to: summarize
+16:25:22 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:22 [INFO] Session 1 | Turn 4/5 | What does Ollama do differently from vLLM and SGLang? When i...
+16:25:22 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:22 [INFO] [Router] → 'summarize'
+16:25:22 [INFO] [Graph] Routing to: summarize
+16:25:25 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:34 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:34 [INFO] Session 1 | Turn 5/5 | Design a production load test for an LLM API endpoint. Speci...
+16:25:35 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:25:35 [INFO] [Router] → 'summarize'
+16:25:35 [INFO] [Graph] Routing to: summarize
+16:25:48 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:29:14 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:29:14 [INFO] Session 3 | Turn 4/5 | Analyze the failure modes section. For each failure mode: (1...
+16:29:14 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 400 Bad Request"
+16:29:14 [WARNING] [Router] Structured output failed (Error code: 400 - {'object': 'error', 'message': "The input (32892 tokens) is longer than the model's context length (32768 tokens).", 'type': 'BadRequestError', 'param': None, 'code': 400}), defaulting to 'act'
+16:29:14 [INFO] [Router] → 'act'
+16:29:14 [INFO] [Graph] Routing to: act
+16:29:14 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:29:14 [ERROR] [Act] Tool execution failed: The input (33337 tokens) is longer than the model's context length (32768 tokens).
+16:29:14 [INFO] Session 3 | Turn 5/5 | Based on the capacity planning section, a product manager wa...
+16:29:14 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 400 Bad Request"
+16:29:14 [WARNING] [Router] Structured output failed (Error code: 400 - {'object': 'error', 'message': "The input (32990 tokens) is longer than the model's context length (32768 tokens).", 'type': 'BadRequestError', 'param': None, 'code': 400}), defaulting to 'act'
+16:29:14 [INFO] [Router] → 'act'
+16:29:14 [INFO] [Graph] Routing to: act
+16:29:14 [INFO] HTTP Request: POST http://127.0.0.1:8000/v1/chat/completions "HTTP/1.1 200 OK"
+16:29:14 [ERROR] [Act] Tool execution failed: The input (33435 tokens) is longer than the model's context length (32768 tokens).
+16:29:14 [INFO] 📁 Report: sglang_agent_performance_report.md | JSON: sglang_agent_results.json | Log: sglang_agent_load_test.log
