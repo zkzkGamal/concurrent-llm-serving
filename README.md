@@ -1,7 +1,30 @@
-# 🚀 Concurrent LLM Serving: vLLM vs SGLang vs Ollama
+![GitHub stars](https://img.shields.io/github/stars/zkzkGamal/concurrent-llm-serving?style=flat-square)
+![License](https://img.shields.io/github/license/zkzkGamal/concurrent-llm-serving?style=flat-square)
+![Python Version](https://img.shields.io/pypi/pyversions/torch?style=flat-square)
 
-> A hands-on benchmark and deep-dive guide to the three dominant open-source LLM serving engines.  
-> **Model tested:** `Qwen/Qwen3.5-0.8B` | **Hardware:** Single GPU | **Concurrency:** 16 simultaneous requests
+# 🚀 SGLang beats vLLM by 4.5× under 16 concurrent requests
+
+> Real benchmarks + agent test results for `Qwen/Qwen3.5-0.8B` on a single GPU.
+>
+> **Concurrency:** 16 simultaneous requests | **Model tested:** `Qwen/Qwen3.5-0.8B` | **Hardware:** Single GPU
+
+---
+
+## 🚀 Key benchmark summary
+
+| Engine | Mean Latency | Notes |
+|---|---|---|
+| **SGLang** | **2.47s** | Best throughput under 16 concurrent requests |
+| **vLLM** | **11.26s** | ~4.5× slower than SGLang |
+| **Ollama** | **134s** | Only 4 requests tested |
+
+```text
+SGLang: 2.47s   |   vLLM: 11.26s   |   Ollama: 134s (only 4 req)
+
+Throughput trend: ██████████████████░░░░░░░░░░  SGLang
+                 █████████░░░░░░░░░░░░░░░░░░   vLLM
+                 █░░░░░░░░░░░░░░░░░░░░░░░░░░   Ollama
+```
 
 ---
 
@@ -20,8 +43,9 @@
 4. [Benchmark Results](#-benchmark-results)
 5. [When to Use Each One](#-when-to-use-each-one)
 6. [How to Run the Tests](#-how-to-run-the-tests)
-7. [API Compatibility](#-api-compatibility)
-8. [Project Structure](#-project-structure)
+7. [Why this repo is still niche](#-why-this-repo-is-still-niche)
+8. [API Compatibility](#-api-compatibility)
+9. [Project Structure](#-project-structure)
 
 ---
 
@@ -574,7 +598,33 @@ python ollama_concurrent_test.py  # 4 concurrent requests to Ollama
 
 Results are saved to `*_results.md` and logs to `*_concurrent_test.log`.
 
+### Agent and simple workflow validation
+
+This repository also includes a full agent-style test harness in `simpleagent/`, which exercises multi-turn prompts and end-to-end workflow behavior.
+
+```bash
+python -m pip install langchain-core langchain-openai langchain-ollama
+python simpleagent/main.py --serve-type sglang --concurrency 3 --url http://127.0.0.1:8000/v1
+python simpleagent/main.py --serve-type vllm --concurrency 3 --url http://127.0.0.1:8000/v1
+```
+
+After running, view the generated reports and logs in `simpleagent/`:
+ - `*_agent_results.json`
+ - `*_agent_performance_report.md`
+ - `*_agent_load_test.log`
+
+Results are saved to `*_results.md`, `*_agent_performance_report.md`, and logs in `*_concurrent_test.log` / `*_agent_load_test.log`.
+
 ---
+
+## 🌟 Why this repo is still niche
+
+- This project is a focused benchmark and validation suite for advanced concurrent LLM serving, not a general-purpose library.
+- It already contains reproducible setup steps, server install scripts, concurrent benchmark scripts, and agent workflow tests.
+- The `simpleagent/` folder is included for agent-specific validation, while `*_concurrent_test.py` covers raw throughput comparisons.
+- Because it is niche and research-oriented, it may not have broad GitHub star exposure yet.
+
+If you find the results useful, please star the repo and help improve the benchmark coverage.
 
 ## 🔌 API Compatibility
 
